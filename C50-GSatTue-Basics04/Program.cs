@@ -33,30 +33,18 @@
             #region Question 05
             // Write a method AddBonusPages(int pages) that adds 50 to pages. Call it with a variable int pages = 400; and print pages afterward. What do you expect to see, and why?
 
-            //static void AddBonusPages(int pages)
-            //{
-            //    pages += 50;
-
-            //}
-            //int pages = 400;
-            //AddBonusPages(pages);
-            //Console.WriteLine(pages);
-            // I expect to see 400 becuse the method not have a return value or print statement.
-            #endregion
-            #region Question 06
-            // Write a method ApplyDiscount(double[] prices) that subtracts 5 from prices[0]. Call it with double[] prices = { 25.5, 40.0 }; and print prices[0] afterward.What do you expect to
-            //  see, and why?
-
-            static void ApplyDiscount(double[] prices)
+            static void AddBonusPages(int pages)
             {
-                prices[0] -= 5;
+                pages += 50;
 
             }
-            double[] prices = { 25.5, 40.0 };
-            ApplyDiscount(prices);
-            Console.WriteLine(prices[0]);
-            // I expect to see 20.5 because substract happened inside method after calling it.
+            int pages = 400;
+            AddBonusPages(pages);
+            Console.WriteLine(pages);
+            // I expect to see 400 becuse the method not have a return value or print statement.
             #endregion
+
+
         }
     }
 }
