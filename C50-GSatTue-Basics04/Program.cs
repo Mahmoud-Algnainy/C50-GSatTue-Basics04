@@ -114,12 +114,22 @@ namespace C50_GSatTue_Basics04
             #region Question 10
             //Write a method PrintBookInfo(string title, int pages = 300) where pages is optional.Call
             //it once with only a title, and once passing both a title and pages.
+            //static void PrintBookInfo(string title, int pages = 300)
+            //{
+            //    Console.WriteLine($"Title: {title}, Pages: {pages}");
+            //}
+            //PrintBookInfo("Clean Code");
+            //PrintBookInfo("Refactoring", 400);
+
+            #endregion
+            #region Question 11
+            //Using the PrintBookInfo method from the question above, call it by naming the parameters, passing pages before title.
             static void PrintBookInfo(string title, int pages = 300)
             {
                 Console.WriteLine($"Title: {title}, Pages: {pages}");
             }
-            PrintBookInfo("Clean Code");
-            PrintBookInfo("Refactoring", 400);
+            PrintBookInfo(pages: 400, title: "Refactoring");
+
 
             #endregion
         }
