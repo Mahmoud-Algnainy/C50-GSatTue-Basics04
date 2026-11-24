@@ -24,25 +24,13 @@
             #endregion
             #region Question 04
             // Write a method PrintBookTitle(string title) that prints "Book title: " + title. Call it with "Clean Code".
-            //static void PrintBookTitle(string title)
-            //{
-            //    Console.WriteLine("Book title: " + title);
-            //}
-            //PrintBookTitle("Clean Code");
-            #endregion
-            #region Question 05
-            // Write a method AddBonusPages(int pages) that adds 50 to pages. Call it with a variable int pages = 400; and print pages afterward. What do you expect to see, and why?
-
-            static void AddBonusPages(int pages)
+            static void PrintBookTitle(string title)
             {
-                pages += 50;
-
+                Console.WriteLine("Book title: " + title);
             }
-            int pages = 400;
-            AddBonusPages(pages);
-            Console.WriteLine(pages);
-            // I expect to see 400 becuse the method not have a return value or print statement.
+            PrintBookTitle("Clean Code");
             #endregion
+
 
 
         }
