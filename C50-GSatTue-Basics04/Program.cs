@@ -124,11 +124,25 @@ namespace C50_GSatTue_Basics04
             #endregion
             #region Question 11
             //Using the PrintBookInfo method from the question above, call it by naming the parameters, passing pages before title.
-            static void PrintBookInfo(string title, int pages = 300)
+            //static void PrintBookInfo(string title, int pages = 300)
+            //{
+            //    Console.WriteLine($"Title: {title}, Pages: {pages}");
+            //}
+            //PrintBookInfo(pages: 400, title: "Refactoring");
+
+
+            #endregion
+            #region Question 12
+            //Write a method PrintAllTitles(params string[] titles) that prints each title on its own line. Call it with three book titles.
+            static void PrintAllTitles(params string[] titles)
             {
-                Console.WriteLine($"Title: {title}, Pages: {pages}");
+                foreach (string title in titles)
+                {
+                    Console.WriteLine(title);
+                }
             }
-            PrintBookInfo(pages: 400, title: "Refactoring");
+            PrintAllTitles("Clean Code", "Refactoring", "Design Patterns");
+
 
 
             #endregion
